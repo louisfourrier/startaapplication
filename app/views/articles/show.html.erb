@@ -1,0 +1,23 @@
+<% provide(:title, "TITLE") %>
+<% provide(:description, "Description" ) %>
+<% provide(:keywords, "keyword1, keyword2")%>
+
+<h1 class="page-header text-center">Show instance <%= @article.id %></h1>
+
+<p>
+	<strong>Title:</strong>
+	<%= @article.title %>
+</p>
+
+<p>
+	<strong>Content:</strong>
+	<%= @article.content %>
+</p>
+
+<p>
+	<strong>User:</strong>
+	<%= @article.user %>
+</p>
+
+<%= link_to 'Edit', edit_article_path(@article), :class => "btn btn-warning"  %> |
+<%= link_to 'Back', articles_path, :class => "btn btn-primary"  %>

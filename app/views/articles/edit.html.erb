@@ -1,0 +1,10 @@
+<% provide(:title, "TITLE") %>
+<% provide(:description, "Description" ) %>
+<% provide(:keywords, "keyword1, keyword2")%>
+
+<h1 class="page-header text-center">Editing Article</h1>
+
+<%= render 'form', article: @article %>
+
+<%= link_to 'Show', @article, :class => "btn btn-warning" %> |
+<%= link_to 'Back', articles_path, :class => "btn btn-info" %>
